@@ -1,0 +1,292 @@
+@import "variable";
+@import "normolize.css";
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.header-top {
+  background: $lite-background;
+  position: relative;
+  z-index: 100;
+  -webkit-box-shadow: 0 4px 15px 0 rgba(110, 68, 255, 0.25);
+  -moz-box-shadow: 0 4px 15px 0 rgba(110, 68, 255, 0.25);
+  box-shadow: 0 4px 15px 0 rgba(110, 68, 255, 0.25);
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 630px;
+    list-style: none;
+    font-family: $main-font;
+    font-size: 22px;
+    color: $lite;
+  }
+}
+
+.button {
+  height: 60px;
+  font-size: 22px;
+  font-family: $main-font;
+  border-radius: 20px;
+
+  &--border {
+    padding: 0 50px 0 50px;
+    background: $lite;
+    color: $accent;
+    border: 3px solid $accent;
+  }
+
+  &-main {
+    background: $accent;
+    padding: 0 30px 0 30px;
+    border: none;
+    color: $lite;
+    margin-top: 60px;
+  }
+}
+
+.header-main {
+  background: $lite;
+  position: relative;
+  height: 680px;
+  box-shadow: 0px 4px 15px 0px rgba(50, 0, 114, 0.25);
+
+  &__position {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__content {
+    z-index: 99;
+  }
+
+  &__content-text {
+    font-size: 30px;
+    font-family: $text-font;
+    font-weight: 500;
+    color: $dark;
+  }
+}
+
+.background-header {
+  position: absolute;
+  z-index: 0;
+  left: -100px;
+  bottom: -25px;
+}
+
+.title-mein {
+  font-family: $main-font;
+  font-size: 80px;
+  color: $dark;
+  margin: 100px 0 50px 0;
+}
+
+
+.card {
+  background: url("img/card.png");
+  width: 500px;
+  height: 490px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgba(50, 0, 114, 0.5);
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:before {
+    content: url("img/back.png");
+    position: absolute;
+    left: -60px;
+    top: 200px;
+  }
+
+  &:after {
+    content: url("img/next.png");
+    position: absolute;
+    right: -60px;
+    top: 200px;
+  }
+}
+
+.decor-element {
+  width: 98px;
+  height: 43px;
+  background: $accent;
+  border-radius: 0 20px 20px 0;
+  color: $lite;
+  font-family: $text-font;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin-top: 30px;
+
+  &__element {
+    border-radius: 50px;
+    height: 20px;
+    width: 20px;
+    background: $background;
+    opacity: 50%;
+  }
+
+  &__element--active {
+    opacity: 100%;
+  }
+}
+
+.title-tourney {
+  background: rgba(110, 68, 255, .5);
+  font-size: 22px;
+  font-family: $main-font;
+  color: $lite;
+  height: 107px;
+  border-radius: 20px;
+  backdrop-filter: blur(7px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-tourney {
+  background: rgba(235, 242, 250, .5);
+  backdrop-filter: blur(7px);
+  border-radius: 20px;
+  height: 107px;
+  display: flex;
+  justify-content: space-between;
+
+  &__content {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: $dark;
+    font-family: $text-font;
+    font-size: 22px;
+  }
+
+  &__title {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__text {
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.rating {
+  background: $background;
+  padding: 60px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.title-block {
+  font-family: $main-font;
+  font-size: 30px;
+  color: $lite;
+}
+
+.sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 360px;
+
+  &__choice {
+    color: $lite;
+    font-size: 25px;
+    font-family: $text-font;
+    font-weight: 500;
+    &--active {
+      text-decoration: underline;
+    }
+  }
+}
+
+.captions {
+  margin: 35px 60px 10px 0;
+  display: flex;
+  justify-content: right;
+
+  &__text-element {
+    font-weight: 300;
+    font-size: 18px;
+    font-family: $text-font;
+    color: $lite;
+    margin-left: 70px;
+  }
+}
+
+.player {
+  background: $lite;
+  border: 2px solid $background;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px 0 rgba(104, 61, 255, 1);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  &__about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $dark;
+    font-family: $text-font;
+    font-size: 22px;
+    margin: 0 75px 0 30px;
+  }
+
+  &__about--name-margin {
+    margin-right: 60px;
+  }
+
+  &__about--text-margin {
+    margin-left: 100px;
+  }
+}
