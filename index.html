@@ -3,37 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prosto+One&family=Ubuntu:wght@300;400;500;700&display=swap"
           rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <header class="header">
     <div class="header-top">
         <div class="container">
             <div class="header-top__content">
-                <a href="#"><img src="img/logo.png" alt="Logo" class="logo"></a>
+                <a href="/"><img class="logo" src="img/logo.png" alt="Logo"></a>
                 <ul class="header-top__nav">
-                    <li class="header-top__link">Рейтинг</li>
-                    <li class="header-top__link">Турниры</li>
-                    <li class="header-top__link">Блог</li>
-                    <li class="header-top__link">Контакты</li>
+                    <li class="header-top__link"><a href="#rating">Рейтинг</a></li>
+                    <li class="header-top__link"><a href="#">Турниры</a></li>
+                    <li class="header-top__link"><a href="#">Блог</a></li>
+                    <li class="header-top__link"><a href="#">Контакты</a></li>
                 </ul>
-                <button class="button button--border">Вход</button>
+                <button class="button button-secondary">Вход</button>
             </div>
         </div>
     </div>
     <div class="header-main">
         <div class="container">
-            <div class="header-main__position">
+            <div class="header-main__wrap">
                 <img src="img/background.png" alt="background" class="background-header">
                 <div class="header-main__content">
-                    <h1 class="title-mein">Hearthstone</h1>
+                    <h1 class="title-main">Hearthstone</h1>
                     <p class="header-main__content-text">Стань чемпионом</p>
                     <p class="header-main__content-text">Впиши себя в историю</p>
-                    <button class="button button-main">Рейтинг игроков</button>
+                    <button class="button button-primary">Рейтинг игроков</button>
                 </div>
                 <div class="slider">
                     <div class="card">
@@ -74,7 +75,7 @@
                 <h3 class="sort__choice">Месяц</h3>
                 <h3 class="sort__choice">Год</h3>
             </div></div>
-        <div class="captions">
+        <div class="captions" id="rating">
             <span class="captions__text-element">турниров</span>
             <span class="captions__text-element">топ 8</span>
             <span class="captions__text-element">топ 1</span>
